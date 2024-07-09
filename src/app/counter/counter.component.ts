@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 export class CounterComponent {
   public counter: number = 0;
 
-  public increment(): void {
-    this.counter++;
+  public increment(value: number): void {
+    this.counter += value;
   }
 
-  public decrement(): void {
-    this.counter--;
+  public decrement(value: number): void {
+    if (this.counter > 0) {
+      this.counter -= value;
+    }
   }
 }
