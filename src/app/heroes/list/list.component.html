@@ -1,1 +1,15 @@
-<p>list works!</p>
+<h1>{{title}}</h1>
+
+<h6> Heroe Borrado: <small class="text-danger">{{deletedHeroe}}</small></h6>
+
+<ul class="list-group mt-2">
+  <li *ngFor="let name of heroesNameList" class="list-group-item">{{name}}</li>
+</ul>
+
+<button (click)="removeLastHeroe()" class="btn btn-outline-danger mx-2 mt-2">
+  Borral Ultimo Heroe
+</button>
+
+<button (click)="resetList()" class="btn btn-primary mt-2">
+  Reset List
+</button>
