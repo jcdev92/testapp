@@ -17,5 +17,6 @@ export class ListComponent {
 
   resetList():void {
     this.heroesNameList = [...this.defaultNames];
+    this.deletedHeroe = undefined;
   }
 }
