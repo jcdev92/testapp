@@ -21,4 +21,8 @@ export class MainPageComponent {
     }
   ]
 
+  public addCharacter(character: Character): void {
+    this.characters.push(character)
+  }
+
 }
