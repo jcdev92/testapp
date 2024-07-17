@@ -3,10 +3,10 @@ import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-dbz-add-character',
-  templateUrl: './add.component.html',
-  styleUrl: './add.component.css'
+  templateUrl: './add-character.component.html',
+  styleUrl: './add-character.component.css'
 })
-export class AddComponent {
+export class AddCharacterComponent {
   @Output()
   public onNewCharacter: EventEmitter<Character> = new EventEmitter();
 
