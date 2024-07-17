@@ -25,4 +25,8 @@ export class MainPageComponent {
     this.characters.push(character)
   }
 
+  public removeCharacter(index: number): void {
+    this.characters.splice(index, 1)
+  }
+
 }
