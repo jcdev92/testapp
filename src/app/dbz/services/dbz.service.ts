@@ -26,11 +26,7 @@ export class DbzService {
     this.characters.push(character)
   }
 
-  // public removeCharacter(index: number): void {
-  //   this.characters.splice(index, 1)
-  // }
-
-  public removeCharacterById(id: string): void {
+  public deleteCharacterById(id: string): void {
     this.characters = this.characters.filter(character => character.id !== id)
   }
 
